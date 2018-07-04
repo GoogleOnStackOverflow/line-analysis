@@ -5,10 +5,10 @@ const fs = require('fs');
     text <String> the line conversation record read from the txt file
                   the text content should start with xxxx/xx/xx（x）...
   OUTPUT
-    none
+    The joined and left names
   RETURN
     <Array> A array of [name, count] where the elements are sorted 
-            from large to small by the counts
+            from large to small by the counts of them
 */
 const textToCountArr = (text) => {
   let re = new RegExp('..[0-9][0-9]:[0-9][0-9]\t');
